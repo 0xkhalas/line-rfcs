@@ -1,5 +1,6 @@
 - Feature Name: `Implementing 'impl' for struct`
 - Start Date: 2025-12-02
+- Issue: [url](https://github.com/0xkhalas/line-rfcs/issues/1)
 
 ## Summary
 
@@ -8,7 +9,7 @@ but it does not coming along with `line` syntax. This RFC proposes a new impleme
 
 ## Motivation
 
-Line needs way to implement function interface for struct. current has two implements style
+Line needs way to implement function interface for struct. current has three implements style
 
 * Use impl for `interface only`. you have to tell what implements for struct & impl body outside struct:
 ```rs
