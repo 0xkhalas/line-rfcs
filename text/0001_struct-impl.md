@@ -14,7 +14,7 @@ Line needs way to implement function interface for struct. current has three imp
 * Use impl for `interface only`. you have to tell what implements for struct & impl body outside struct:
 ```rs
 struct Player {
-   extend std.Debug, std.Eq;
+   extend std::Debug, std::Eq;
    impl std::Ops::Eq, std::Fmt, std::Drop;
 
    pub name: *u8,
@@ -35,7 +35,7 @@ impl std::Ops::Eq for Player {}
 * Use same as `rust way`. you have to tell what implements for struct & impl body outside struct:
 ```rs
 struct Player {
-   extend std.Debug, std.Eq;
+   extend std::Debug, std::Eq;
    impl std::Ops::Eq, std::Fmt, std::Drop;
 
    pub name: *u8,
@@ -58,7 +58,7 @@ impl std::Ops::Eq for Player {}
 * Use `impl keyword only` and created methods in struct itself
 ```rs
 struct Player {
-   extend std.Debug, std.Eq;
+   extend std::Debug, std::Eq;
    impl std::Ops::Eq, std::Fmt, std::Drop;
 
    pub name: *u8,
@@ -95,7 +95,7 @@ struct Player {
 i think the last one `impl keyword only` is good because is working with way of `Line` files working as all file act as Struct like this.
 
 ```rs
-extend std.Debug, std.Eq;
+extend std::Debug, std::Eq;
 impl std::Ops::Eq, std::Fmt, std::Drop;
 
 pub name: *u8,
